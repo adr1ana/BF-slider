@@ -14,5 +14,8 @@ which came out of the viewport.
 This applies to each row separately.
 Clicking on a single arrow moves both rows at the same time.
 
+## Live preview
+You can see my slider on this <a href="https://adr1ana.github.io/BF-slider/">link</a>
+
 ## Design
 by Plava tvornica on this <a href="https://goo.gl/jgvJDq">link</a>
