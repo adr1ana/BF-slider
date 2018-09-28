@@ -43,12 +43,13 @@ function rowTwo () {
 *************************************************/
 
 function moveLeftFirst () {
-  var last = $('ul.first > li:last-child').css({opacity:'0'});
+  var last = $('ul.first > li:last-child');
+  last.remove();
+  last.prependTo('.first');
   //var myWidth = $('ul.first > li:last-child').width();
   //console.log("my width: " + myWidth);
-  last.prependTo('.first');
   //last.animate({opacity: '1', width: myWidth});
-  last.animate({opacity: '1'});
+  //last.animate({opacity: '1'});
 }
 
 /* Htjela sam pomoću .width() pamtiti širinu zadnje slike da se pomakne cijeli
@@ -57,21 +58,25 @@ dodaju marginu prilikom animacije pa se cijeli slider kao prošiti i suzi za
 par pixela.*/
 
 function moveRightFirst () {
-  var first = $('ul.first > li:first-child').css({opacity:'0'});
+  var first = $('ul.first > li:first-child');
+  first.remove();
   first.appendTo('.first');
-  first.animate({opacity: '1'});
 }
 
 function moveLeftSecond () {
-  var last = $('ul.second > li:last-child').css({opacity:'0'});
+  //var last = $('ul.second > li:last-child').css({opacity:'0'});
+  var last = $('ul.second > li:last-child');
+  last.remove();
   last.prependTo('.second');
-  last.animate({opacity: '1'});
+  //last.animate({opacity: '1'});
 }
 
 function moveRightSecond () {
-  var first = $('ul.second > li:first-child').css({opacity:'0'});
+  //var first = $('ul.second > li:first-child').css({opacity:'0'});
+  var first = $('ul.second > li:first-child');
+  first.remove();
   first.appendTo('.second');
-  first.animate({opacity: '1'});
+  //first.animate({opacity: '1'});
 }
 
 $(".previous").click(function(){
