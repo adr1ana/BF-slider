@@ -1,70 +1,88 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-#wrapper {
-  position: relative;
-}
-
-.container {
-  margin: 50px;
-  position: absolute;
-  left: -200px;
-  overflow: hidden;
-}
-
-.slider {
-  width: 1070px;
-  background-color: #fff;
-  float: left;
-}
-
-ul {
-  list-style: none;
-  float: left;
-  background-color: #fff;
-  margin: 0 0 10px 0;
-}
-
-li {
-  display: inline;
-}
-
-img {
-  margin: 0 0 0 10px;
-  height: 200px;
-  border-radius: 5px;
-  box-sizing: border-box;
-  padding: 0px;
-}
-
-.previous, .next{
-  border: 1px solid #dcd;
-  border-radius: 5px;
-  margin: 0 20px 10px 20px;
-  color: #dcd;
-  text-align: center;
-  padding: 20px 25px;
-}
-
-.previous:hover, .next:hover {
-  border-color: #15477a;
-  color: #15477a;
-}
-
-.arrows {
-  float: right;
-}
-
-.text-container {
-  width: 310px;
-  float: right;
-}
-
-h1 {
-  color: #15477a;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 p {
   color: #606060;
 }
+
+h1 {
+  color: #15477a;
+  font-size: 1.85em;
+  margin: 0;
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.text-container {
+  width: 300px;
+  float: left;
+}
+
+.slider {
+  width: 600px;
+  float: left;
+  margin-right: 20px;
+}
+.slider ul {
+  list-style: none;
+  display: flex;
+  float: right;
+  margin: 0;
+}
+.slider ul li {
+  display: inline;
+}
+.slider ul li img {
+  margin: 0 0 5px 10px;
+  padding: 0;
+  height: 200px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.slider .second-row {
+  margin-right: 150px;
+  flex-direction: row;
+}
+
+.arrows {
+  float: right;
+}
+.arrows .previous, .arrows .next {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  color: #dddddd;
+  text-align: center;
+  margin: 0 0 10px 80px;
+  padding: 20px 25px;
+}
+.arrows .previous:hover, .arrows .next:hover {
+  border-color: #15477a;
+  color: #15477a;
+}
+
+.elements-up1, .elements-up2, .elements-down {
+  float: left;
+  width: 300px;
+  height: 100px;
+  background-color: #dddddd;
+  border-radius: 0 0 5px 5px;
+  margin: 0 0 60px 0;
+}
+
+.elements-up2 {
+  width: 620px;
+  margin-left: 20px;
+}
+
+.elements-down {
+  margin: 50px 0 0 0;
+  width: 940px;
+  border-radius: 5px 5px 0 0;
+}
+
+/*# sourceMappingURL=app.css.map */
