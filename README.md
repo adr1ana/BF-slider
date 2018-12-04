@@ -1,7 +1,7 @@
 # BF-slider
 
 ## My task
-I had to make a Slider using HTML, CSS and jQuery.
+I had to make a Slider using HTML, CSS, SASS and jQuery.
 
 ## Functionality
 Slider moves left and right depending on which arrow we click.
